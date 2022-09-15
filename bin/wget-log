@@ -1,0 +1,22 @@
+200 OK
+Length: unspecified [text/html]
+Saving to: ‘/home/daniel/IdeaProjects/auctionMatics/data/leilao380.pagina3.html’
+
+     0K .......... .......... .......... .......... .......     106M=0s
+
+2022-09-14 22:44:19 (106 MB/s) - Read error at byte 48546 (Success).Retrying.
+
+--2022-09-14 22:44:20--  (try: 2)  https://www.guariglialeiloes.com.br/leilao/380/lotes?page=3
+Connecting to www.guariglialeiloes.com.br (www.guariglialeiloes.com.br)|44.193.245.44|:443... failed: Connection timed out.
+Connecting to www.guariglialeiloes.com.br (www.guariglialeiloes.com.br)|3.226.8.241|:443... failed: Connection timed out.
+Connecting to www.guariglialeiloes.com.br (www.guariglialeiloes.com.br)|44.195.153.245|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘/home/daniel/IdeaProjects/auctionMatics/data/leilao380.pagina3.html’
+
+     0K .......... .......... .......... .......... .......... 46,9K
+    50K .......... .......... .......... .......... ..........  106K
+   100K .......... .......... .......... ......                34,3M=1,5s
+
+2022-09-14 22:48:48 (88,9 KB/s) - ‘/home/daniel/IdeaProjects/auctionMatics/data/leilao380.pagina3.html’ saved [139963]
+

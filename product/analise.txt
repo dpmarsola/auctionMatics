@@ -1,0 +1,14 @@
+Este link busca o maior lance em formato HTML
+https://www.freitasleiloeiro.com.br/leiloes/lanceslote?p1=4648&p2=22
+https://www.freitasleiloeiro.com.br/leiloes/lanceslote?p1=4675&p2=48
+
+Este link busca em formato JSON
+http://gr-painel.freitasleiloeiro.com.br/leiloes/lote/status/4648-11
+
+Exibe o html da pagina do lote
+https://www.freitasleiloeiro.com.br/leiloes/lote?leilaoid=4675&lote=48
+
+Exibe os ultimos 3 lances
+https://www.freitasleiloeiro.com.br/leiloes/lances?p1=4675&p2=48&p3=4
+
+

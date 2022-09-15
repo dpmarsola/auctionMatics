@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="auctionMatics:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c8b16d6-b640-4d25-8851-7b6463ac5f62" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HibernateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TestHibernate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Teste1CodeSignal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+    <list default="true" id="7feccec3-61e7-4e93-91d4-a4ae90efb869" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/auctionMatics_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/auctionMatics/main/DadosLoteCRUD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/auctionMatics/main/DadosLotes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/auctionMatics/main/InsereDadodBasicos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/auctionMatics/main/ObtemDadosBasicos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/auctionMatics/main/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestHibernate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,54 +41,120 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="MavenRunner">
     <option name="delegateBuildToMaven" value="true" />
   </component>
-  <component name="ProjectId" id="28q6GCA7dU6oXypPa2BLM1l5otk" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2EMddwjTLkQnpIhCyeRLjoQtg8A" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/daniel/workspace/myHibernateProject",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/daniel/IdeaProjects/auctionMatics/src/main/java/br/com/auctionMatics/mainapp&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.Teste1CodeSignal">
-    <configuration name="TestHibernate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestHibernate" />
-      <module name="myhibernateproject" />
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/br/com/auctionMatics/mainapp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.auctionMatics.main" />
+      <recent name="br.com.auctionMatics.mainapp" />
+      <recent name="br.com.auctionMatics" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.br.com.auctionMatics.dto.TestHibernate">
+    <configuration name="InsereDadodBasicos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.auctionMatics.main.InsereDadodBasicos" />
+      <module name="auctionMatics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.auctionMatics.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Teste1CodeSignal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Teste1CodeSignal" />
-      <module name="myHibernateProject" />
+    <configuration name="InsereLoteDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.auctionMatics.InsereLoteDB" />
+      <module name="auctionMatics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.auctionMatics.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ObtemDadosBasicos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.auctionMatics.main.ObtemDadosBasicos" />
+      <module name="auctionMatics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.auctionMatics.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="br.com.auctionMatics.dto.TestHibernate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.auctionMatics.dto.TestHibernate" />
+      <module name="auctionMatics" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="br.com.auctionMatics.main.DadosLoteCRUD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.auctionMatics.main.DadosLoteCRUD" />
+      <module name="auctionMatics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.auctionMatics.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Teste1CodeSignal" />
-        <item itemvalue="Application.TestHibernate" />
+        <item itemvalue="Application.br.com.auctionMatics.main.DadosLoteCRUD" />
+        <item itemvalue="Application.InsereDadodBasicos" />
+        <item itemvalue="Application.br.com.auctionMatics.dto.TestHibernate" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2c8b16d6-b640-4d25-8851-7b6463ac5f62" name="Changes" comment="" />
-      <created>1651931673996</created>
+      <changelist id="7feccec3-61e7-4e93-91d4-a4ae90efb869" name="Changes" comment="" />
+      <created>1662409479204</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1651931673996</updated>
+      <updated>1662409479204</updated>
     </task>
     <servers />
   </component>
