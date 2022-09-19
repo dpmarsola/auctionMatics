@@ -15,11 +15,16 @@ public class DadosLotes implements Serializable {
     @Id
     @Column(name = "LoteID", unique = true, nullable = false)
     private Integer LoteID;
-
+    
+    @Column(name = "numLeilao", nullable = false)
+    private Integer numLeilao;
+    
     @Column(name = "marcaModeloVeiculo", nullable = false)
     private String marcaModeloVeiculo;
+    
     @Column(name = "anoVeiculo", nullable = false)
     private String anoVeiculo;
+    
     @Column(name = "qtdeKilometros", nullable = false)
     private String qtdeKilometros;
 
@@ -39,11 +44,19 @@ public class DadosLotes implements Serializable {
         return LoteID;
     }
 
-    public void setLoteID(Integer loteID) {
+	public void setLoteID(Integer loteID) {
         LoteID = loteID;
     }
 
-    public String getMarcaModeloVeiculo() {
+    public Integer getNumLeilao() {
+		return numLeilao;
+	}
+
+	public void setNumLeilao(Integer numLeilao) {
+		this.numLeilao = numLeilao;
+	}
+	
+	public String getMarcaModeloVeiculo() {
         return marcaModeloVeiculo;
     }
 

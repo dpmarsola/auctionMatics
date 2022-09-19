@@ -9,7 +9,7 @@ import java.util.List;
 
 public class DadosLoteCRUD {
 
-    public void insereOuAtualiza(Integer loteID, String marcaModeloVeiculo, String anoVeiculo, String quilometragem, String corVeiculo, String combustivel, String linkLote) {
+    public void insereOuAtualiza(Integer loteID, Integer numLeilao, String marcaModeloVeiculo, String anoVeiculo, String quilometragem, String corVeiculo, String combustivel, String linkLote) {
 
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction tx = null;
@@ -18,6 +18,7 @@ public class DadosLoteCRUD {
             tx = session.beginTransaction();
             DadosLotes emp = new DadosLotes();
             emp.setLoteID(loteID);
+            emp.setNumLeilao(numLeilao);
             emp.setMarcaModeloVeiculo(marcaModeloVeiculo);
             emp.setAnoVeiculo(anoVeiculo);
             emp.setQtdeKilometros(quilometragem);
@@ -63,8 +64,22 @@ public class DadosLoteCRUD {
 
         //HibernateUtil.shutdown();
     }
+    
+    public List<DadosLotes> buscaTodosLotes(Integer numLeilao) {
 
+        Session session = HibernateUtil.getSessionFactory().openSession();
+/*
+        EntityManager em = session.getEntityManagerFactory().createEntityManager();
+        System.out.println(em.createQuery("SELECT * FROM br.com.auctionMatics.main.DadosLotes").getResultList());
+*/
+        Query q = session.createQuery("from DadosLotes where numLeilao = :numLeilao")
+                .setParameter("numLeilao", numLeilao);
+        List<DadosLotes> list = q.getResultList();
 
+        return list;
+        //HibernateUtil.shutdown();
+    }
+    
     public static void main(String[] args){
 
         DadosLoteCRUD dlcrud = new DadosLoteCRUD();

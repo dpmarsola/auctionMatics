@@ -1,30 +1,36 @@
 package br.com.auctionMatics.main;
 
-public class ObtemDadosBasicos {
+import java.util.List;
 
-    public void buscaInsereDadosLeilao(Integer numLeilao) {
+public class ObtemDadosBasicos extends Thread{
+	
+	Integer numleilao;
+	
+	public ObtemDadosBasicos(Integer numleilao) {
+		this.numleilao = numleilao;
+	}
+
+    public void run() {
 
         boolean flContinuaBusca = true;
         Integer numPagina = 1;
+        
+        StatusConsultaCRUD sc = new StatusConsultaCRUD();
+        sc.insereOuAtualiza(numleilao, "INI");
 
         while (flContinuaBusca){
 
-            InsereDadodBasicos idb = new InsereDadodBasicos();
-            if ( idb.obtemDadosWebsite(numLeilao, numPagina) == 0){
+            InsereDadosBasicos idb = new InsereDadosBasicos();
+            if ( idb.obtemDadosWebsite(numleilao, numPagina) == 0){
                 numPagina++;
             }else{
                 flContinuaBusca = false;
             }
 
         }
+        
+        sc.insereOuAtualiza(numleilao, "FIM");
 
     }
-    public static void main(String[] args) {
-
-        ObtemDadosBasicos lag = new ObtemDadosBasicos();
-        lag.buscaInsereDadosLeilao(380);
-    }
-
-
-
+    
 }

@@ -7,7 +7,7 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 
-public class InsereDadodBasicos {
+public class InsereDadosBasicos {
 
     public Integer obtemDadosWebsite(Integer numLeilao, Integer pagina ){
 
@@ -25,7 +25,6 @@ public class InsereDadodBasicos {
 
             if ( lotes.toString().length() > 0 ) {
 
-            	System.out.println("PASSEI AQUI OH");
                 DadosLoteCRUD dlote = new DadosLoteCRUD();
                 Integer numeroLeilao = numLeilao;
                 boolean flJumpToNext = false;
@@ -92,7 +91,7 @@ public class InsereDadodBasicos {
                         String lotefinal = loteElem.attributes().toString();
                         if (lotefinal.substring(7).startsWith("h")) {
                             String linkLote = lotefinal.substring(7, lotefinal.length() - 1);
-                            dlote.insereOuAtualiza(contadorLote, marca, ano, kilometragem, cor, combustivel, linkLote);
+                            dlote.insereOuAtualiza(contadorLote, numeroLeilao, marca, ano, kilometragem, cor, combustivel, linkLote);
                             contadorLote++;
                         }
                     }
@@ -108,10 +107,38 @@ public class InsereDadodBasicos {
 
     public static void main(String[] args){
 
-        InsereDadodBasicos od = new InsereDadodBasicos();
-        System.out.println(od.obtemDadosWebsite(380, 1));
+//        InsereDadosBasicos od = new InsereDadosBasicos();
+//        System.out.println(od.obtemDadosWebsite(381, 1));
 
-    }
+        String siteLeilao = "https://www.guariglialeiloes.com.br/leilao/"+ 381 + "/lotes?page=" + 1;
+        Document doc;
+		try {
+			doc = Jsoup.connect(siteLeilao).get();
+			Elements lotes = doc.select(".lance-lote");
+			for (Element lote : lotes) {
+				Elements divs = lote.select("div");
+				String[] valores = null;
+				int i=0;
+				for (Element div : divs) {
+					if (div.hasClass("lance_atual") || div.hasClass("lance")) {
+						System.out.println(div.text());
+						valores[i]=div.text();
+						i++;
+					}
+				}
+				System.out.println("Esse e o valor" + valores[3]);
+
+		        
+				
+
+		        
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+            }        
+        
 
 
 }

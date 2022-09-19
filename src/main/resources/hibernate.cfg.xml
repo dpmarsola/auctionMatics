@@ -12,5 +12,6 @@
       <property name="show_sql">true</property>
       <property name="hbm2ddl.auto">update</property>
       <mapping class="br.com.auctionMatics.main.DadosLotes"></mapping>
+      <mapping class="br.com.auctionMatics.main.StatusConsulta"></mapping>
    </session-factory>
 </hibernate-configuration>
